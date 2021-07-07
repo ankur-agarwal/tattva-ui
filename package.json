@@ -1,0 +1,19 @@
+{
+  "name": "tattva-ui",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Ankur Agarwal <agarwalankur58@gmail.com>",
+  "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ],
+  "private": true,
+  "scripts": {
+    "test": "lerna run test",
+    "new-version": "lerna version --conventional-commits --yes",
+    "diff": "lerna diff"
+  },
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  }
+}
