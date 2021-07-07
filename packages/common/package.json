@@ -1,9 +1,16 @@
 {
   "name": "@tattva-ui/common",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "license": "MIT",
   "scripts": {
-    "test": "echo test from: $npm_package_name - $npm_package_version"
+    "test": "echo test from: $npm_package_name - $npm_package_version",
+    "build": "tsc -b",
+    "clean": "rm -rf ./dist && rm tsconfig.tsbuildinfo",
+    "watch": "tsc -b -w --preserveWatchOutput"
   }
 }
